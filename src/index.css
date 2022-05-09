@@ -1,13 +1,57 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.card-text{
+    display: block;
+    display: -webkit-box;
+    margin: 0 auto 10px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+a.nav-Link {
+    color: #1f1f1f;
+    text-decoration: none;
+    padding: 5px 5px;
+    margin: 0 5px;
+}
+a.nav-Link:hover {
+    color: #0d6efd;
+}
+.carousel-item .row {
+    display: flex;
+    align-items: center;
+}
+.slider-image {
+    height: 340px;
+    width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+
+}
+.slider-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main-contain .card-title   {
+    font-size: 30px;
+    color: #000;
+    font-weight: 600;
+    max-width: 800px;
+}  
+.main-contain .card-text{
+    margin: 20px 0;
+    max-width: 600px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.carousel-indicators{
+    margin-bottom: 0px !important;
+    bottom: -30px !important;
+}
+.data{
+    text-transform: capitalize;
 }
