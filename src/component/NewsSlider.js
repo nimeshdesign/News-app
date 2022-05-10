@@ -37,7 +37,8 @@ export default class NewsSlider extends Component {
           <div className="main-contain">
             <h5 className="card-title" >{element.title}</h5>
              <p className="card-text">{!element.description?"According to the daily coal report of the National Power Portal, ther":element.description}</p>
-            <a rel="noreferrer" href={element.url } target="_blank" className="btn btn-sm btn-primary">Read More</a>
+             <p className="card-text"><small className="text-muted">By {!element.author?"Unknown": element.author} on {new Date(element.publishedAt).toGMTString()} </small></p>
+             <a rel="noreferrer" href={element.url } target="_blank" className="btn btn-sm btn-primary">Read More</a>
             </div>
         </div>
       
