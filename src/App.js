@@ -4,16 +4,16 @@ import Navbar from './component/Navbar';
 import News from './component/News';
 import NewsSlider from './component/NewsSlider';
 import {
-  BrowserRouter,
   Routes,
   Route,
+  HashRouter
 } from "react-router-dom";
 export default class App extends Component {
   pageSize = 8
   render() {
     return (
       <div>
-      <BrowserRouter>
+      <HashRouter>
       <Navbar/>
       <NewsSlider/>
       <Routes>
@@ -26,7 +26,7 @@ export default class App extends Component {
                 <Route  exact path="sports" element={<News key="sports"  pageSize={this.pageSize} country ="in" category="sports"/>}/>  
                 <Route  exact path="technology" element={<News key="technology"  pageSize={this.pageSize} country ="in" category="technology"/>}/>  
           </Routes>
-    </BrowserRouter>
+    </HashRouter>
         </div>
     )
   }
